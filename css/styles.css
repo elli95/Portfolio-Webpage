@@ -11,11 +11,33 @@ body {
     line-height: 1.5;
 }
 
-main {
-    width: min(1000px, 100% - 3rem);
+main {  
+    width: min(95%, 100% - 3rem);
+    max-width: min(1800px, 100% - 3rem);
     margin-inline: auto;
 }
 
+.about-me {
+    display: grid;
+    grid-template-areas:
+    "a" "b";  
+    justify-items: center;
+} 
+
+.profile-img {
+    grid-area: a;
+}
+
+.profile-info {
+    grid-area: b;
+}
+
+.profile-img {
+    clip-path: circle();  
+    max-width: 350px;
+}
+
+.about-me,
 .projects-cards {
     filter: drop-shadow(0px 0px 5px black);
     background-color: white;

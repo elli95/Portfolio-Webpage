@@ -1,0 +1,22 @@
+@media (min-width: 800px) {
+    .about-me {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "b a";
+        align-items: center;
+    } 
+}
+
+@media (min-width: 1000px) {
+
+    .card-section {
+        display: flex;
+        flex-flow: row;
+    }
+}
+
+/* @media (min-width: 1600px) {
+    main {
+        width: min(70%, 100% - 3rem);
+    }
+} */
