@@ -6,25 +6,33 @@ img {
     width: 100%;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
+    background: linear-gradient(120deg, #c8b2ef 52%, #a7e3fa 50%);
 }
 
 main {  
-    width: min(95%, 100% - 3rem);
-    max-width: min(1800px, 100% - 3rem);
+    width: min(95%, 100% - 1rem);
+    max-width: min(1800px, 100% - 1rem);
     margin-inline: auto;
 }
 
 .about-me {
     display: grid;
     grid-template-areas:
-    "a" "b";  
+    "a" "b" "c" "d";  
     justify-items: center;
 } 
 
 .profile-img {
+    clip-path: circle();  
+    max-width: 350px;
     grid-area: a;
 }
 
@@ -32,17 +40,55 @@ main {
     grid-area: b;
 }
 
-.profile-img {
-    clip-path: circle();  
-    max-width: 350px;
+.my-skills {
+    grid-area: c;
+}
+.contact-info {
+    display: grid;
+    grid-area: d;
+}
+
+.contact-info a {  
+    margin: 20px 0px 0px 0px;
+}
+
+.fa-linkedin {
+    color: #2653aa;
+}
+
+.email {
+    display: flex;
+    align-items: center;
 }
 
 .about-me,
 .projects-cards {
-    filter: drop-shadow(0px 0px 5px black);
+    box-shadow: 2px 2px 5px black;
     background-color: white;
-    border: 1px solid black;
     border-radius: 10px;
-    padding: 0px 10px;
-    margin: 30px 5px;
+    padding: 0px 10px 10px 10px;
+    margin: 30px 0px;
+}
+
+.projects,
+.projects-cards h2 {
+    text-align: center;
+}
+
+.projects-cards h3 {
+    margin: 10px;
+}
+
+.project-source {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.netlify {
+    color: #008380;
+}
+
+.project-source a:hover,
+.contact-info a:hover {
+    text-decoration: underline;
 }

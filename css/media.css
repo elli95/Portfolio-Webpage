@@ -1,22 +1,23 @@
 @media (min-width: 800px) {
     .about-me {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-        "b a";
+        "b a"
+        "c a"
+        "d a";
         align-items: center;
     } 
+
+    .about-me, 
+    .projects-cards, 
+    .contact-me {
+        margin: 30px 15px;
+    }
 }
 
 @media (min-width: 1000px) {
-
     .card-section {
         display: flex;
         flex-flow: row;
     }
 }
-
-/* @media (min-width: 1600px) {
-    main {
-        width: min(70%, 100% - 3rem);
-    }
-} */
