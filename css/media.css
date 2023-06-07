@@ -1,10 +1,16 @@
+@media (min-width: 600px){
+    .project-source { 
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 800px) {
     .about-me {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "b a"
-        "c a"
-        "d a";
+        "c a";
         align-items: center;
     } 
 
@@ -16,8 +22,37 @@
 }
 
 @media (min-width: 1000px) {
+    .profile-info h1 {
+        font-size: 2rem;
+    }
+
     .card-section {
         display: flex;
         flex-flow: row;
+    }
+
+    .project-source {
+        flex-direction: column;
+    }
+
+    .project-source, 
+    .contact-info {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .my-skills {
+        font-size: 5rem;
+    }
+
+    .projects-cards h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .project-source {
+        flex-direction: row;
     }
 }

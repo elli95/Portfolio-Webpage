@@ -17,8 +17,11 @@ body {
     background: linear-gradient(120deg, #c8b2ef 52%, #a7e3fa 50%);
 }
 
+.profile-info h2,
+.contact-info,
 h3 {
     font-weight: normal;
+    font-size: 1.3rem;
 }
 
 main {  
@@ -30,7 +33,7 @@ main {
 .about-me {
     display: grid;
     grid-template-areas:
-    "a" "b" "c" "d";  
+    "a" "b" "c";  
     justify-items: center;
     padding: 0px 5% 10px 5%;
 } 
@@ -49,6 +52,7 @@ main {
 
 .profile-info h1 {
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .my-skills {
@@ -56,11 +60,6 @@ main {
     font-size: 3rem;
 }
 
-.contact-info {
-    display: grid;
-    font-size: 1.18rem;
-    grid-area: d;
-}
 
 .contact-info a {  
     margin: 20px 0px 0px 0px;
@@ -76,14 +75,16 @@ main {
 }
 
 .about-me,
-.projects-cards {
+.projects-cards,
+.contact-info {
     box-shadow: 2px 2px 5px black;
     background-color: white;
     border-radius: 10px;
     margin: 30px 0px;
 }
 
-.projects {
+.projects,
+.contact {
     font-size: 2.2rem;
     text-decoration: underline;
 }
@@ -93,21 +94,30 @@ main {
 }
 
 .projects,
-.projects-cards h2 {
+.projects-cards h2,
+.contact {
     text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+.projects-cards h2 {
+    font-size: 1.6rem;
 }
 
 .projects-cards h3 {
-    margin: 10px;
+    margin: 3% 5%;
+}
+.project-source a {
+    padding: 10px 0px;
 }
 
-.project-source {
+.project-source,
+.contact-info {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.netlify {
-    color: #008380;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;  
 }
 
 .project-source a:hover,
