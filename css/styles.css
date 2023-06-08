@@ -1,3 +1,5 @@
+@import "variables.css";
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -7,19 +9,19 @@ img {
 }
 
 a {
-    color: black;
+    color: var(--black-color);
     text-decoration: none;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
-    background: linear-gradient(120deg, #c8b2ef 52%, #a7e3fa 50%);
+    background: linear-gradient(120deg, var(--linear-gradient-left) 52%, var(--linear-gradient-right) 50%);
 }
 
 .profile-info h2,
 .contact-info,
-h3 {
+p {
     font-weight: normal;
     font-size: 1.3rem;
 }
@@ -33,7 +35,11 @@ main {
 .about-me {
     display: grid;
     grid-template-areas:
-    "a" "b" "c";  
+    "a" 
+    "b" 
+    "c" 
+    "d" 
+    "e";  
     justify-items: center;
     padding: 0px 5% 10px 5%;
 } 
@@ -41,7 +47,7 @@ main {
 .profile-img {
     clip-path: circle();  
     min-width: 295px;
-    max-width: 55%;
+    max-width: 450px;
     grid-area: a;
 }
 
@@ -56,17 +62,38 @@ main {
 }
 
 .my-skills {
-    grid-area: c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: c;  
+}
+
+.my-skills a {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 0px 20px;
+    min-width: 100px;
+}
+
+.skill-icons {
     font-size: 3rem;
 }
 
+.contact {
+    grid-area: d;  
+}
+
+.contact-info {
+    grid-area: e;  
+}
 
 .contact-info a {  
     margin: 20px 0px 0px 0px;
 }
 
 .fa-linkedin {
-    color: #2653aa;
+    color: var(--linkedin);
 }
 
 .email {
@@ -75,16 +102,14 @@ main {
 }
 
 .about-me,
-.projects-cards,
-.contact-info {
-    box-shadow: 2px 2px 5px black;
-    background-color: white;
+.projects-cards {
+    box-shadow: 2px 2px 5px var(--black-color);
+    background-color: var(--white-color);
     border-radius: 10px;
     margin: 30px 0px;
 }
 
-.projects,
-.contact {
+.projects {
     font-size: 2.2rem;
     text-decoration: underline;
 }
@@ -105,8 +130,11 @@ main {
     font-size: 1.6rem;
 }
 
-.projects-cards h3 {
+.projects-cards p {
+    height: 190px;
     margin: 3% 5%;
+    text-overflow: ellipsis;
+    overflow: auto;
 }
 .project-source a {
     padding: 10px 0px;

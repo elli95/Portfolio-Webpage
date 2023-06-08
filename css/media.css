@@ -1,19 +1,21 @@
+@media (min-width: 500px){
+    .projects-cards p {
+        height: 130px;
+    }
+}
+
 @media (min-width: 600px){
     .project-source { 
         justify-content: space-evenly;
         flex-direction: row;
     }
+    
+    .projects-cards p {
+        height: 100px;
+    }
 }
 
 @media (min-width: 800px) {
-    .about-me {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "b a"
-        "c a";
-        align-items: center;
-    } 
-
     .about-me, 
     .projects-cards, 
     .contact-me {
@@ -31,6 +33,17 @@
         flex-flow: row;
     }
 
+    .projects-cards h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+
+    .projects-cards p {
+        height: 225px;
+    }
+
     .project-source {
         flex-direction: column;
     }
@@ -42,17 +55,54 @@
 }
 
 @media (min-width: 1200px){
-    .my-skills {
+    .skill-icons {
         font-size: 5rem;
     }
 
     .projects-cards h2 {
         font-size: 1.8rem;
     }
+
+    .projects-cards p {
+        height: 160px;
+    }
 }
 
 @media (min-width: 1500px) {
+    .about-me {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "b a" 
+        "c a" 
+        "d a"
+        "e a";
+        align-items: center;
+    } 
+
     .project-source {
         flex-direction: row;
+    }
+
+    .projects-cards p {
+        height: 130px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .contact-info {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 40px;
+    }
+}
+
+@media (min-width: 1850px) {
+    .projects-cards h2 {
+        height: auto;
+    }
+
+    .projects-cards p {
+        height: 95px;
     }
 }
