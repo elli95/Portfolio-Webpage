@@ -4,6 +4,10 @@
     box-sizing: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 100%;
 }
@@ -17,6 +21,23 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
     background: linear-gradient(120deg, var(--linear-gradient-left) 52%, var(--linear-gradient-right) 50%);
+    padding-top: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    padding: 15px 0px;
+    margin: 0;
+    font-size: 1.5rem;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: 0;
+    list-style-type: none;
+    box-shadow: 2px 2px 5px var(--black-color);
+    background-color: var(--nav-color);
 }
 
 .profile-info h2,
@@ -42,6 +63,7 @@ main {
     "e";  
     justify-items: center;
     padding: 0px 5% 10px 5%;
+    scroll-margin-top: 70px;
 } 
 
 .profile-img {
@@ -124,6 +146,7 @@ main {
     text-align: center;
     margin: 0px;
     padding: 10px;
+    scroll-margin-top: 70px;
 }
 
 .projects-cards h2 {
@@ -148,7 +171,10 @@ main {
     font-size: 1.2rem;  
 }
 
+nav li:hover,
 .project-source a:hover,
 .contact-info a:hover {
     text-decoration: underline;
+    transform: scale(1.05);
+    transition: 2s;
 }
