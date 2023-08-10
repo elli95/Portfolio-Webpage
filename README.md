@@ -72,6 +72,8 @@ Just follow these steps and you are on your way:
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
+If you encounters any issues feel free to post a new post on the issues tab.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
