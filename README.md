@@ -61,7 +61,7 @@ git clone https://github.com/elli95/Cross-Course-Project_Rainy-Day_Elise-Marie-H
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Contributing -->
-##Contributing
+## Contributing
 
 Want to contribute to the project?
 Just follow these steps and you are on your way:
