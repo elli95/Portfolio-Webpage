@@ -2,7 +2,7 @@
 
 # Portfolio Webpage
 
-[![Portfolio Webpage - Screen Shot][project-screenshot]](https://hilarious-macaron-248ed3.netlify.app/)
+[![Portfolio Webpage - Screen Shot][project-screenshot]](https://elisemariehogsnes.netlify.app/)
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -33,7 +33,7 @@
 This is the Portfolio Project, made during my first year of education at noroff, spring 2023.
 This website shows a short introduction about myself, my projects and how you can contact me.
 
-View the live version [here](https://hilarious-macaron-248ed3.netlify.app/)
+View the live version [here](https://elisemariehogsnes.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
