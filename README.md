@@ -30,7 +30,7 @@
 
 ## About The Project
 
-This is the Portfolio Project, made during my first year of education at noroff, spring 2023.
+This is the Portfolio Project, made during my first and second year of education at noroff, spring 2023/24.
 This website shows a short introduction about myself, my projects and how you can contact me.
 
 View the live version [here](https://elisemariehogsnes.netlify.app/)
@@ -61,6 +61,7 @@ git clone https://github.com/elli95/Cross-Course-Project_Rainy-Day_Elise-Marie-H
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Contributing -->
+
 ## Contributing
 
 Want to contribute to the project?
