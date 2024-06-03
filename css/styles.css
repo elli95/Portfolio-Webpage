@@ -1,180 +1,191 @@
 @import "variables.css";
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 a {
-    color: var(--black-color);
-    text-decoration: none;
+  color: var(--black-color);
+  text-decoration: none;
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.5;
-    background: linear-gradient(120deg, var(--linear-gradient-left) 52%, var(--linear-gradient-right) 50%);
-    padding-top: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  background: linear-gradient(120deg, var(--linear-gradient-left) 52%, var(--linear-gradient-right) 50%);
+  padding-top: 50px;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    position: fixed;
-    padding: 15px 0px;
-    margin: 0;
-    font-size: 1.5rem;
-    z-index: 2;
-    width: 100%;
-    left: 0;
-    top: 0;
-    list-style-type: none;
-    box-shadow: 2px 2px 5px var(--black-color);
-    background-color: var(--nav-color);
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  padding: 15px 0px;
+  margin: 0;
+  font-size: 1.5rem;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  top: 0;
+  list-style-type: none;
+  box-shadow: 2px 2px 5px var(--black-color);
+  background-color: var(--nav-color);
 }
 
 .profile-info h2,
 .contact-info,
 p {
-    font-weight: normal;
-    font-size: 1.3rem;
+  font-weight: normal;
+  font-size: 1.3rem;
 }
 
-main {  
-    width: min(95%, 100% - 1rem);
-    max-width: min(1800px, 100% - 1rem);
-    margin-inline: auto;
+main {
+  width: min(95%, 100% - 1rem);
+  max-width: min(1800px, 100% - 1rem);
+  margin-inline: auto;
 }
 
 .about-me {
-    display: grid;
-    grid-template-areas:
-    "a" 
-    "b" 
-    "c" 
-    "d" 
-    "e";  
-    justify-items: center;
-    padding: 0px 5% 10px 5%;
-    scroll-margin-top: 70px;
-} 
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
+  justify-items: center;
+  padding: 0px 5% 10px 5%;
+  scroll-margin-top: 70px;
+}
 
 .profile-img {
-    clip-path: circle();  
-    min-width: 295px;
-    max-width: 450px;
-    grid-area: a;
+  clip-path: circle();
+  min-width: 295px;
+  max-width: 450px;
+  grid-area: a;
 }
 
 .profile-info {
-    grid-area: b;
-    max-width: 670px;
+  grid-area: b;
+  max-width: 670px;
 }
 
 .profile-info h1 {
-    text-align: center;
-    font-size: 1.6rem;
+  text-align: center;
+  font-size: 1.6rem;
 }
 
 .my-skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-area: c;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-area: c;
 }
 
 .my-skills a {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    padding: 0px 20px;
-    min-width: 100px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 0px 20px;
+  min-width: 100px;
 }
 
 .skill-icons {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .contact {
-    grid-area: d;  
+  grid-area: d;
 }
 
 .contact-info {
-    grid-area: e;  
+  grid-area: e;
 }
 
-.contact-info a {  
-    margin: 20px 0px 0px 0px;
+.contact-info a {
+  margin: 20px 0px 0px 0px;
 }
 
 .fa-linkedin {
-    color: var(--linkedin);
+  color: var(--linkedin);
 }
 
 .email {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .about-me,
 .projects-cards {
-    box-shadow: 2px 2px 5px var(--black-color);
-    background-color: var(--white-color);
-    border-radius: 10px;
-    margin: 30px 0px;
-}
-
-.projects {
-    font-size: 2.2rem;
-    text-decoration: underline;
+  box-shadow: 0px 5px 10px var(--black-color);
+  background-color: var(--white-color);
+  border-radius: 10px;
+  margin: 30px 0px;
 }
 
 .projects-cards {
-    padding: 0px 10px 10px 10px;
+  width: 340px;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardImg {
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.projects {
+  font-size: 2.2rem;
+  text-decoration: underline;
 }
 
 .projects,
 .projects-cards h2,
 .contact {
-    text-align: center;
-    margin: 0px;
-    padding: 10px;
-    scroll-margin-top: 70px;
+  text-align: center;
+  margin: 0px;
 }
 
 .projects-cards h2 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .projects-cards p {
-    height: 190px;
-    margin: 3% 5%;
-    text-overflow: ellipsis;
-    overflow: auto;
+  height: auto;
+  margin: 3% 5%;
+  text-overflow: ellipsis;
+  overflow: auto;
 }
 .project-source a {
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 .project-source,
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 nav li:hover,
 .project-source a:hover,
 .contact-info a:hover {
-    text-decoration: underline;
-    transform: scale(1.05);
-    transition: 2s;
+  text-decoration: underline;
+  transform: scale(1.05);
+  transition: 2s;
 }

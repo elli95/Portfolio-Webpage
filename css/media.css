@@ -1,116 +1,92 @@
-@media (min-width: 500px){
-    .projects-cards p {
-        height: 130px;
-    }
-}
+@media (min-width: 600px) {
+  .project-source {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 
-@media (min-width: 600px){
-    .project-source { 
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
-
-    .projects-cards p {
-        height: 100px;
-    }
+  .projects-cards {
+    width: 435px;
+  }
 }
 
 @media (min-width: 800px) {
-    .about-me, 
-    .projects-cards, 
-    .contact-me {
-        margin: 30px 15px;
-    }
+  .about-me,
+  .projects-cards,
+  .contact-me {
+    margin: 30px 15px;
+  }
 }
 
 @media (min-width: 1000px) {
-    body {
-        padding-top: 70px;
-    }
+  body {
+    padding-top: 70px;
+  }
 
-    nav ul {
-        font-size: 2rem;
-    }
+  nav ul {
+    font-size: 2rem;
+  }
 
-    .profile-info h1 {
-        font-size: 2rem;
-    }
+  .profile-info h1 {
+    font-size: 2rem;
+  }
 
-    .card-section {
-        display: flex;
-        flex-flow: row;
-    }
+  .projects-cards h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .projects-cards h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70px;
-    }
+  .projects-cards p {
+    height: 125px;
+  }
 
-    .projects-cards p {
-        height: 225px;
-    }
-
-    .project-source {
-        flex-direction: column;
-    }
-
-    .project-source, 
-    .contact-info {
-        font-size: 1.5rem;
-    }
+  .project-source,
+  .contact-info {
+    font-size: 1.5rem;
+  }
 }
 
-@media (min-width: 1200px){
-    .skill-icons {
-        font-size: 5rem;
-    }
+@media (min-width: 1200px) {
+  .skill-icons {
+    font-size: 5rem;
+  }
 
-    .projects-cards h2 {
-        font-size: 1.8rem;
-    }
+  .projects-cards {
+    width: 500px;
+  }
 
-    .projects-cards p {
-        height: 160px;
-    }
+  .projects-cards h2 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (min-width: 1500px) {
-    .about-me {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "b a" 
-        "c a" 
-        "d a"
-        "e a";
-        align-items: center;
-    } 
+  .about-me {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "b a"
+      "c a"
+      "d a"
+      "e a";
+    align-items: center;
+  }
 
-    .project-source {
-        flex-direction: row;
-    }
-
-    .projects-cards p {
-        height: 130px;
-    }
+  .project-source {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1700px) {
-    .contact-info {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        gap: 40px;
-    }
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 40px;
+  }
 }
 
 @media (min-width: 1850px) {
-    .projects-cards h2 {
-        height: auto;
-    }
-
-    .projects-cards p {
-        height: 95px;
-    }
+  .projects-cards h2 {
+    height: auto;
+  }
 }
